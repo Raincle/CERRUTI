@@ -4,9 +4,12 @@
     <title>CERRUTI 1881</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/onepage-scroll.css">
 
     <script type="text/javascript" src="static/js/jquery-3.0.0.min.js"></script>
     <script type="text/javascript" src="static/js/jquery.color-2.1.2.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery.onepage-scroll.min.js"></script>
+    <script type="text/javascript" src="static/js/cerruti.js"></script>
 </head>
 
 <style>
@@ -50,23 +53,35 @@
         clear: both;
     }
 
-    .test {
+    .cerruti {
         position: relative;
-        width: 100vw;
-        height: 100vh;
+    }
+
+    section {
         background-color: rgb(26,27,28);
+    }
+
+    .poster .main-img-wrapper {
+        position: relative;
+        width: 100%;
+        height: 80vh;
+        background-color: white;
     }
 
 </style>
 
 <body>
 
-<div class="test"></div>
+<article class="cerruti">
+    <section class="poster">
+        <div class="main-img-wrapper">
+            <img src="" alt="">
+        </div>
+    </section>
+    <section class="menu"></section>
+    <section class="container"></section>
+</article>
 
 </body>
-
-<script>
-
-</script>
 
 </html>
