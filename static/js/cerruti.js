@@ -34,10 +34,14 @@ $(function() {
     });
 
     $('.onepage-pagination').css({
+        display: 'none',
         top:(windowHeight-$('.onepage-pagination').height())/2
     });
     $('body').on('touchmove', function (event) {
         event.preventDefault();
     },false);
+
+
+
 
 });

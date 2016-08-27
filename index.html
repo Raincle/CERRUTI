@@ -38,10 +38,17 @@
         font-family: Avenir,"Microsoft YaHei",微软雅黑;
     }
 
+    @font-face {
+        font-family: PingFang;
+        src: url("./static/fonts/PingFang.ttc");
+        font-weight: normal;
+        font-style: normal;
+    }
+
     p {
         margin: 0;
         padding: 0;
-        font-family: Avenir,"Microsoft YaHei",微软雅黑;
+        font-family: PingFang,"Microsoft YaHei",微软雅黑;
     }
 
     ::-webkit-input-placeholder {
@@ -65,7 +72,64 @@
         position: relative;
         width: 100%;
         height: 80vh;
-        background-color: white;
+        background-color: lightgrey;
+    }
+
+    .menu .menu-item {
+        position: relative;
+        width: 100vw;
+        height: 20vh;
+        margin: 0 auto;
+        background-color: rgb(26,27,28);
+        cursor: pointer;
+    }
+
+    .menu .a {
+        background-color: lightgrey;
+    }
+
+    .container .tabs-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 10vh;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .tabs-wrapper .tab-item {
+        position: relative;
+        width: 20%;
+        height: 100%;
+        float: left;
+        cursor: pointer;
+    }
+
+    .tabs-wrapper .a {
+        background-color: lightgrey;
+    }
+
+    .contents-wrapper {
+        position: relative;
+        width: 100vw;
+        height: 75vh;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    .contents-wrapper .content-item {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .contents-wrapper .a {
+        background-color: lightgrey;
+    }
+
+    .contents-wrapper .isActive {
+        display: block;
     }
 
 </style>
@@ -78,8 +142,30 @@
             <img src="" alt="">
         </div>
     </section>
-    <section class="menu"></section>
-    <section class="container"></section>
+    <section class="menu">
+        <div class="menu-item a"></div>
+        <div class="menu-item"></div>
+        <div class="menu-item a"></div>
+        <div class="menu-item"></div>
+        <div class="menu-item a"></div>
+    </section>
+    <section class="container">
+        <div class="tabs-wrapper">
+            <div class="tab-item addverse a"></div>
+            <div class="tab-item introduce"></div>
+            <div class="tab-item product a"></div>
+            <div class="tab-item about"></div>
+            <div class="tab-item interaction a"></div>
+            <div class="clear"></div>
+        </div>
+        <div class="contents-wrapper">
+            <div class="content-item addverse a isActive"></div>
+            <div class="content-item introduce"></div>
+            <div class="content-item product a"></div>
+            <div class="content-item about"></div>
+            <div class="content-item interaction a"></div>
+        </div>
+    </section>
 </article>
 
 </body>
