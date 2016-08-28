@@ -2,6 +2,24 @@ $(function() {
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
 
+    var contentState = "adverse";
+
+    function changeContentState(state) {
+        $('.contents-wrapper .content-item').css({display: 'none'});
+        var className = '.contents-wrapper .' + state;
+        $(className).css({display: 'block'});
+    }
+
+    $('.menu .menu-item').click(function() {
+        contentState = $(this).attr("contentState");
+        changeContentState(contentState);
+    });
+
+    $('.tabs-wrapper .tab-item').click(function() {
+        contentState = $(this).attr("contentState");
+        changeContentState(contentState);
+    });
+
         //Scroll;
     $(".cerruti").onepage_scroll({
         sectionContainer: "section",
