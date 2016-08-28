@@ -4,6 +4,7 @@
     <title>CERRUTI 1881</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
     <link rel="stylesheet" href="static/css/onepage-scroll.css">
 
     <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
@@ -229,6 +230,7 @@
         width: 90%;
         height: 100%;
         margin: 0 auto;
+        overflow: hidden;
     }
 
     .contents-wrapper .a {
@@ -239,7 +241,7 @@
         display: block;
     }
 
-    .contents-wrapper .addverse .adverse-wrapper {
+    .contents-wrapper .adverse .adverse-wrapper {
         position: relative;
         width: 100%;
         height: 40%;
@@ -247,7 +249,7 @@
         overflow: hidden;
     }
 
-    .contents-wrapper .addverse .play-btn {
+    .contents-wrapper .adverse .play-btn {
         position: absolute;
         width: 10%;
         height: auto;
@@ -255,7 +257,7 @@
         bottom: 4%;
     }
 
-    .contents-wrapper .addverse .desc {
+    .contents-wrapper .adverse .desc {
         position: relative;
         width: 100%;
         height: auto;
@@ -263,6 +265,175 @@
         font-size: 12px;
         text-align: left;
     }
+
+
+     .contents-wrapper .about .about-wrapper {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .contents-wrapper .about .play-btn {
+        position: absolute;
+        width: 10%;
+        height: auto;
+        left: 8%;
+        bottom: 4%;
+    }
+
+    .contents-wrapper .about .desc {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: left;
+    }
+
+
+    .contents-wrapper .introduce {
+        width: 100%;
+    }
+
+    .contents-wrapper .introduce .arrow-left {
+        position: absolute;
+        left: 4vw;
+        top: 40%;
+        width: 4vw;
+        height: auto;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .contents-wrapper .introduce .arrow-left img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contents-wrapper .introduce .arrow-right {
+        position: absolute;
+        right: 4vw;
+        top: 40%;
+        width: 4vw;
+        height: auto;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .contents-wrapper .introduce .arrow-right img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contents-wrapper .introduce .introduce-wrapper {
+        position: absolute;
+        width: 400%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        overflow: hidden;
+    }
+
+    .contents-wrapper .introduce .introduce-wrapper .page {
+        position: relative;
+        width: 25%;
+        height: 100%;
+        float: left;
+        overflow: hidden;
+    }
+
+
+    .contents-wrapper .product .product-wrapper {
+        position: relative;
+        width: 100%;
+        height: 30%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .contents-wrapper .product .play-btn {
+        position: absolute;
+        width: 10%;
+        height: auto;
+        left: 8%;
+        bottom: 4%;
+    }
+
+    .contents-wrapper .product .desc {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contents-wrapper .interaction .interaction-wrapper {
+        position: relative;
+        width: 100%;
+        height: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+
+    .contents-wrapper .interaction .title {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 2vh;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contents-wrapper .interaction .detail {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contents-wrapper .interaction .enter-btn {
+        position: relative;
+        width: 40%;
+        height: 4vh;
+        margin: 0 auto;
+        margin-top: 10%;
+        cursor: pointer;
+        border: 1px solid white;
+    }
+
+    .contents-wrapper .interaction .enter-btn p {
+        position: relative;
+        width: 100%;
+        line-height: 4vh;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .contents-wrapper .interaction .issues {
+        position: absolute;
+        width: 100%;
+        height: 4vh;
+        left: 0;
+        bottom: 0;
+        text-decoration: underline;
+        cursor: pointer;
+        font-size: 12px;
+        text-align: center;
+    }
+
+
 
 </style>
 
@@ -285,6 +456,10 @@
             <img src="./static/img/play.png" alt="" class="play-btn">
             <p class="menu-name">广告大片</p>
         </div>
+        <div class="menu-item about" contentState="about">
+            <img class="bg" src="./static/img/adverse.jpg" alt="">
+            <p class="menu-name">主创团队</p>
+        </div>
         <div class="menu-item introduce" contentState="introduce">
             <img class="bg" src="./static/img/adverse.jpg" alt="">
             <p class="menu-name">系列介绍</p>
@@ -293,20 +468,21 @@
             <img class="bg" src="./static/img/adverse.jpg" alt="">
             <p class="menu-name">巴黎时装秀</p>
         </div>
-        <div class="menu-item about" contentState="about">
-            <img class="bg" src="./static/img/adverse.jpg" alt="">
-            <p class="menu-name">主创团队</p>
-        </div>
+
         <div class="menu-item interaction" contentState="interaction">
-            <img class="bg" src="./static/img/adverse.jpg" alt="">
+            <img class="bg" src="./static/img/interaction.jpg" alt="">
             <p class="menu-name">互动活动</p>
         </div>
     </section>
     <section class="container">
         <div class="tabs-wrapper">
-            <div class="tab-item addverse" contentState="addverse">
+            <div class="tab-item adverse" contentState="adverse">
                 <img src="./static/img/icon1.png" alt="">
                 <p>广告大片</p>
+            </div>
+            <div class="tab-item about" contentState="about">
+                <img src="./static/img/icon4.png" alt="">
+                <p>主创团队</p>
             </div>
             <div class="tab-item introduce" contentState="introduce">
                 <img src="./static/img/icon2.png" alt="">
@@ -315,10 +491,6 @@
             <div class="tab-item product" contentState="product">
                 <img src="./static/img/icon3.png" alt="">
                 <p>巴黎时装秀</p>
-            </div>
-            <div class="tab-item about" contentState="about">
-                <img src="./static/img/icon4.png" alt="">
-                <p>主创团队</p>
             </div>
             <div class="tab-item interaction" contentState="interaction">
                 <img src="./static/img/icon5.png" alt="">
@@ -331,7 +503,8 @@
             <div class="seperator-4"></div>
         </div>
         <div class="contents-wrapper">
-            <div class="content-item addverse isActive">
+
+            <div class="content-item adverse isActive">
                 <div class="adverse-wrapper">
                     <img class="bg" src="./static/img/adverse.jpg" alt="">
                     <img class="play-btn" src="./static/img/play.png" alt="">
@@ -340,10 +513,57 @@
 广告由国际著名摄影大师 Peter Lindbergh 在巴黎工作室拍摄,主角为超模巨星Andres Velencoso, Andres 亦是 CERRUTI 1881香氛广告的主角。</br>
 灵感源自品牌多年以来与电影的紧密联系,完美诠释男装的精致剪裁与面料的超卓质感。在自然光线与工作室场景的映衬下,全新系列的独特个性完美呈现,同时也聚焦成衣, 配饰以及广告主角。</p>
             </div>
-            <div class="content-item introduce"></div>
-            <div class="content-item product"></div>
-            <div class="content-item about"></div>
-            <div class="content-item interaction"></div>
+
+            <div class="content-item introduce">
+                <div class="arrow-left">
+                    <img src="./static/img/AR2.png" alt="">
+                </div>
+                <div class="arrow-right">
+                    <img src="./static/img/AR3.png" alt="">
+                </div>
+                <div class="introduce-wrapper">
+                    <div class="page page-1">
+                        <img src="./static/img/introduce-1.jpg" alt="" class="bg">
+                    </div>
+                    <div class="page page-2"></div>
+                    <div class="page page-3"></div>
+                    <div class="page page-4">
+                        <img src="./static/img/introduce-6.jpg" alt="" class="bg">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <div class="content-item about">
+                <div class="about-wrapper">
+                    <img class="bg" src="./static/img/about.jpg" alt="">
+                    <img class="play-btn" src="./static/img/play.png" alt="">
+                </div>
+                <p class="desc">CERRUTI 1881 首席创意执行官Jason Basmajian 说道:“我们非常高兴能与 Peter 合作,全新广告大片既简约又瞩目,以CERRUTI 1881 的品牌DNA 开展了一段视觉对话。我们的对话让我充分的感受到 Peter 的热情、经验以及他对品牌的了解,这些都融入在全新系列的广告大片当中。”</p>
+            </div>
+
+            <div class="content-item product">
+                <div class="product-wrapper">
+                    <img class="bg" src="./static/img/product-video.jpg" alt="">
+                    <img class="play-btn" src="./static/img/play.png" alt="">
+                </div>
+                <p class="desc">CERRUTI 1881  2016-17秋冬系列巴黎時裝秀</p>
+            </div>
+            <div class="content-item interaction">
+                <div class="page page-1">
+                    <div class="interaction-wrapper">
+                        <img class="bg" src="./static/img/interaction-1.jpg" alt="">
+                    </div>
+                    <p class="title">参与互动问答,免费赢取200元代金券</p>
+                    <p class="detail">适用于 CERRUTI 1881 中国大陆正价店</p>
+                    <div class="enter-btn"><p>点击进入</p></div>
+                    <p class="issues">条款及细则</p>
+                </div>
+                <div class="page page-2"></div>
+                <div class="page page-3"></div>
+                <div class="page page-4"></div>
+                <div class="page page-5"></div>
+            </div>
         </div>
     </section>
 </article>

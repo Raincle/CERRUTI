@@ -3,6 +3,7 @@ $(function() {
     var windowHeight = $(window).height();
 
     var contentState = "adverse";
+    var introduceState = 0;
 
     function changeContentState(state) {
         $('.contents-wrapper .content-item').css({display: 'none'});
@@ -19,6 +20,26 @@ $(function() {
         contentState = $(this).attr("contentState");
         changeContentState(contentState);
     });
+
+    function changeIntrduceState(state) {
+        introduceState = introduceState + state;
+        if (introduceState < -3) {
+            introduceState = 0;
+        } else if (introduceState > 0) {
+            introduceState = -3;
+        }
+        var pageLeft = $('.contents-wrapper .introduce').width() * introduceState;
+        $('.contents-wrapper .introduce .introduce-wrapper').animate({left: pageLeft}, 'normal');
+    }
+
+    $('.contents-wrapper .introduce .arrow-left').click(function() {
+        changeIntrduceState(1);
+    });
+
+    $('.contents-wrapper .introduce .arrow-right').click(function() {
+        changeIntrduceState(-1);
+    });
+
 
         //Scroll;
     $(".cerruti").onepage_scroll({
@@ -69,6 +90,16 @@ $(function() {
     //Img process;
     relayoutBG('.poster .main-img-wrapper img');
     relayoutBG('.menu .menu-item .bg');
-    relayoutBG('.contents-wrapper .addverse .adverse-wrapper .bg');
+    //Adverse;
+    relayoutBG('.contents-wrapper .adverse .adverse-wrapper .bg');
+    //About;
+    relayoutBG('.contents-wrapper .about .about-wrapper .bg');
+    //Introduce;
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
+    //Product;
+    relayoutBG('.contents-wrapper .product .product-wrapper .bg');
+    //Interaction;
+    relayoutBG('.contents-wrapper .interaction .page-1 .interaction-wrapper .bg');
 
 });
