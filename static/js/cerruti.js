@@ -42,6 +42,15 @@ $(function() {
     },false);
 
 
-
+    $('.poster .down-arrow').click(function() {
+        $(".cerruti").moveDown();
+    });
+    $('.menu .menu-item').click(function() {
+        $(".cerruti").moveDown();
+    });
+    //Img process;
+    relayoutBG('.poster .main-img-wrapper img');
+    relayoutBG('.menu .menu-item .bg');
+    relayoutBG('.contents-wrapper .addverse .adverse-wrapper .bg');
 
 });

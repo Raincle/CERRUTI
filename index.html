@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/css/onepage-scroll.css">
 
-    <script type="text/javascript" src="static/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="static/js/jquery.color-2.1.2.min.js"></script>
     <script type="text/javascript" src="static/js/jquery.onepage-scroll.min.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
     <script type="text/javascript" src="static/js/cerruti.js"></script>
 </head>
 
@@ -35,20 +36,21 @@
     }
 
     * {
-        font-family: Avenir,"Microsoft YaHei",微软雅黑;
+        font-family: Times,"Microsoft YaHei",微软雅黑;
     }
 
-    @font-face {
-        font-family: PingFang;
-        src: url("./static/fonts/PingFang.ttc");
-        font-weight: normal;
-        font-style: normal;
-    }
+    /*@font-face {*/
+        /*font-family: Times;*/
+        /*src: url("./static/fonts/Times.dfont");*/
+        /*font-weight: normal;*/
+        /*font-style: normal;*/
+    /*}*/
 
     p {
         margin: 0;
         padding: 0;
-        font-family: PingFang,"Microsoft YaHei",微软雅黑;
+        font-family: Times,"Microsoft YaHei",微软雅黑;
+        color: white;
     }
 
     ::-webkit-input-placeholder {
@@ -71,8 +73,46 @@
     .poster .main-img-wrapper {
         position: relative;
         width: 100%;
-        height: 80vh;
+        height: 100%;
         background-color: lightgrey;
+        overflow: hidden;
+    }
+
+    .poster .poster-title-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 16vh;
+        left: 0;
+        bottom: 16vh;
+        background-color: rgba(0,0,0,0.2);
+    }
+
+    .poster-title-wrapper .title {
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+        line-height: 6vh;
+        margin: 0 auto;
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .poster-title-wrapper .detail {
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+        line-height: 6vh;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .poster .down-arrow {
+        position: absolute;
+        width: 16%;
+        height: auto;
+        left: 42%;
+        bottom: 2vh;
+        cursor: pointer;
     }
 
     .menu .menu-item {
@@ -82,18 +122,36 @@
         margin: 0 auto;
         background-color: rgb(26,27,28);
         cursor: pointer;
+        overflow: hidden;
     }
 
-    .menu .a {
-        background-color: lightgrey;
+    .menu .play-btn {
+        position: absolute;
+        width: 10%;
+        height: auto;
+        left: 8%;
+        bottom: 4%;
+    }
+
+
+    .menu .menu-name {
+        position: absolute;
+        width: auto;
+        font-size: 18px;
+        line-height: 6vh;
+        text-align: right;
+        right: 2%;
+        bottom: 4%;
     }
 
     .container .tabs-wrapper {
         position: relative;
-        width: 100vw;
+        width: 90vw;
         height: 10vh;
         margin: 0 auto;
-        margin-top: 10vh;
+        margin-top: 2vh;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
     }
 
     .tabs-wrapper .tab-item {
@@ -104,22 +162,70 @@
         cursor: pointer;
     }
 
-    .tabs-wrapper .a {
-        background-color: lightgrey;
+    .seperator-1 {
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        left: 20%;
+        top: 0;
+        background-color: white;
+    }
+
+    .seperator-2 {
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        left: 40%;
+        top: 0;
+        background-color: white;
+    }
+
+    .seperator-3 {
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        left: 60%;
+        top: 0;
+        background-color: white;
+    }
+
+    .seperator-4 {
+        position: absolute;
+        width: 1px;
+        height: 80%;
+        left: 80%;
+        top: 0;
+        background-color: white;
+    }
+
+    .tab-item img {
+        display: block;
+        position: relative;
+        width: auto;
+        height: 50%;
+        margin: 0 auto;
+    }
+
+    .tab-item p {
+        position: relative;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10%;
     }
 
     .contents-wrapper {
         position: relative;
         width: 100vw;
-        height: 75vh;
+        height: 88vh;
         margin: 0 auto;
-        margin-top: 5vh;
     }
 
     .contents-wrapper .content-item {
         display: none;
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 100%;
         margin: 0 auto;
     }
@@ -132,6 +238,31 @@
         display: block;
     }
 
+    .contents-wrapper .addverse .adverse-wrapper {
+        position: relative;
+        width: 100%;
+        height: 40%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .contents-wrapper .addverse .play-btn {
+        position: absolute;
+        width: 10%;
+        height: auto;
+        left: 8%;
+        bottom: 4%;
+    }
+
+    .contents-wrapper .addverse .desc {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        font-size: 12px;
+        text-align: left;
+    }
+
 </style>
 
 <body>
@@ -139,31 +270,79 @@
 <article class="cerruti">
     <section class="poster">
         <div class="main-img-wrapper">
-            <img src="" alt="">
+            <img src="./static/img/main_photo_small.jpg" alt="">
         </div>
+        <div class="poster-title-wrapper">
+            <p class="title">CERRUTI 1881</p>
+            <p class="detail">2016-17秋冬系列</p>
+        </div>
+        <img src="./static/img/AR1.png" class="down-arrow" alt="">
     </section>
     <section class="menu">
-        <div class="menu-item a"></div>
-        <div class="menu-item"></div>
-        <div class="menu-item a"></div>
-        <div class="menu-item"></div>
-        <div class="menu-item a"></div>
+        <div class="menu-item">
+            <img class="bg" src="./static/img/adverse.png" alt="">
+            <img src="./static/img/play.png" alt="" class="play-btn">
+            <p class="menu-name">广告大片</p>
+        </div>
+        <div class="menu-item">
+            <img class="bg" src="./static/img/adverse.png" alt="">
+            <p class="menu-name">系列介绍</p>
+        </div>
+        <div class="menu-item">
+            <img class="bg" src="./static/img/adverse.png" alt="">
+            <p class="menu-name">巴黎时装秀</p>
+        </div>
+        <div class="menu-item">
+            <img class="bg" src="./static/img/adverse.png" alt="">
+            <p class="menu-name">主创团队</p>
+        </div>
+        <div class="menu-item">
+            <img class="bg" src="./static/img/adverse.png" alt="">
+            <p class="menu-name">互动活动</p>
+        </div>
     </section>
     <section class="container">
         <div class="tabs-wrapper">
-            <div class="tab-item addverse a"></div>
-            <div class="tab-item introduce"></div>
-            <div class="tab-item product a"></div>
-            <div class="tab-item about"></div>
-            <div class="tab-item interaction a"></div>
+            <div class="tab-item addverse">
+                <img src="./static/img/icon1.png" alt="">
+                <p>广告大片</p>
+            </div>
+            <div class="tab-item introduce">
+                <img src="./static/img/icon2.png" alt="">
+                <p>系列介绍</p>
+            </div>
+            <div class="tab-item product">
+                <img src="./static/img/icon3.png" alt="">
+                <p>巴黎时装秀</p>
+            </div>
+            <div class="tab-item about">
+                <img src="./static/img/icon4.png" alt="">
+                <p>主创团队</p>
+            </div>
+            <div class="tab-item interaction">
+                <img src="./static/img/icon5.png" alt="">
+                <p>互动活动</p>
+            </div>
             <div class="clear"></div>
+            <div class="seperator-1"></div>
+            <div class="seperator-2"></div>
+            <div class="seperator-3"></div>
+            <div class="seperator-4"></div>
         </div>
         <div class="contents-wrapper">
-            <div class="content-item addverse a isActive"></div>
+            <div class="content-item addverse isActive">
+                <div class="adverse-wrapper">
+                    <img class="bg" src="./static/img/adverse.png" alt="">
+                    <img class="play-btn" src="./static/img/play.png" alt="">
+                </div>
+                <p class="desc">CERRUTI 1881 2016-17秋冬广告大片演绎品牌休闲简约的男士优雅美学。</br>
+广告由国际著名摄影大师 Peter Lindbergh 在巴黎工作室拍摄,主角为超模巨星Andres Velencoso, Andres 亦是 CERRUTI 1881香氛广告的主角。</br>
+灵感源自品牌多年以来与电影的紧密联系,完美诠释男装的精致剪裁与面料的超卓质感。在自然光线与工作室场景的映衬下,全新系列的独特个性完美呈现,同时也聚焦成衣, 配饰以及广告主角。</p>
+            </div>
             <div class="content-item introduce"></div>
-            <div class="content-item product a"></div>
+            <div class="content-item product"></div>
             <div class="content-item about"></div>
-            <div class="content-item interaction a"></div>
+            <div class="content-item interaction"></div>
         </div>
     </section>
 </article>
