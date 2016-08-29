@@ -99,6 +99,8 @@ $(function() {
     relayoutBG('.contents-wrapper .about .andres-avatar-wrapper img');
     //Introduce;
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img');
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .bottom-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
     //Product;
     relayoutBG('.contents-wrapper .product .product-wrapper .bg');
