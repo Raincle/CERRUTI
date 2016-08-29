@@ -61,6 +61,16 @@ $(function() {
         changeProductState(-1);
     });
 
+    function changeProductStateBySelector(state) {
+        var pageLeft = $('.contents-wrapper .product').width() * state;
+        $('.contents-wrapper .product .img-gallery').animate({left: pageLeft * -1}, 'normal');
+    }
+
+    $('.img-selector .img-item').click(function() {
+        var state = parseInt($(this).attr("stateValue"));
+        changeProductStateBySelector(state);
+    });
+
         //Scroll;
     $(".cerruti").onepage_scroll({
         sectionContainer: "section",
