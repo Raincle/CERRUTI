@@ -101,4 +101,65 @@ $(function() {
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
     //Product;
     //Interaction;
+
+    $('.contents-wrapper .interaction .enter-btn').click(function() {
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-3').css({display:'block'});
+    });
+
+    $('.contents-wrapper .interaction .issues').click(function() {
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-2').css({display:'block'});
+    });
+
+    $('.contents-wrapper .interaction .back-btn').click(function() {
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-1').css({display:'block'});
+    });
+
+    var rightAnswer = "A"
+    var choice = ""
+    $('.contents-wrapper .interaction .page-3 .options-wrapper .option').click(function() {
+        $('.contents-wrapper .interaction .page-3 .options-wrapper .choice-icon').css({display:'none'});
+        $(this).find('.choice-icon').css({display:'block'});
+        choice = $(this).attr('optionValue');
+        console.log(choice);
+    });
+
+    $('.inputs-wrapper .district-input .value').click(function() {
+        $('.inputs-wrapper .district-input .districts-wrapper').css({display:'block'});
+        $('.inputs-wrapper .district-input .districts-wrapper').animate({height:80}, 'fast');
+    });
+
+    $('.inputs-wrapper .district-input .districts-wrapper p').click(function() {
+        $('.inputs-wrapper .district-input .value').text($(this).text());
+        $('.inputs-wrapper .district-input .districts-wrapper').animate({height:0}, 'fast', function() {
+            $('.inputs-wrapper .district-input .districts-wrapper').css({display:'none'});
+        });
+    });
+
+    $('.contents-wrapper .interaction .page-3 .submit-btn').click(function() {
+        if (choice == 'B') {
+            $('.contents-wrapper .interaction .page').css({display:'none'});
+            $('.contents-wrapper .interaction .page-4').css({display:'block'});
+        } else {
+            $('.contents-wrapper .interaction .page').css({display:'none'});
+            $('.contents-wrapper .interaction .page-5').css({display:'block'});
+        }
+        //Send user info;
+    });
+
+    $('.contents-wrapper .interaction .page-5 .back-to-choose-btn').click(function() {
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-3').css({display:'block'});
+    });
+
+    $('.contents-wrapper .interaction .page-5 .back-to-main-btn').click(function() {
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-1').css({display:'block'});
+    });
+
+    $('.contents-wrapper .interaction .page-5 .go-to-website-btn').click(function() {
+        window.location.href = "http://www.cerruti.com";
+    });
 });

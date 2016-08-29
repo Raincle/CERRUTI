@@ -519,6 +519,14 @@
         text-align: center;
     }
 
+    .contents-wrapper .interaction .page {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
     .contents-wrapper .interaction .interaction-wrapper {
         position: relative;
         width: 100%;
@@ -548,17 +556,16 @@
         text-align: center;
     }
 
-    .contents-wrapper .interaction .enter-btn {
+    .contents-wrapper .interaction .interaction-btn {
         position: relative;
         width: 40%;
         height: 4vh;
         margin: 0 auto;
-        margin-top: 10%;
         cursor: pointer;
         border: 1px solid white;
     }
 
-    .contents-wrapper .interaction .enter-btn p {
+    .contents-wrapper .interaction .interaction-btn p {
         position: relative;
         width: 100%;
         line-height: 4vh;
@@ -567,18 +574,215 @@
         text-align: center;
     }
 
+    .contents-wrapper .interaction .enter-btn {
+        margin-top: 10%;
+    }
+
+    .contents-wrapper .interaction .back-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+    }
+
+
+
+    .contents-wrapper .interaction .submit-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+    }
+
+    .contents-wrapper .interaction .get-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+    }
+
+    .contents-wrapper .interaction .go-to-website-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 20%;
+    }
+
+    .contents-wrapper .interaction .back-to-main-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 30%;
+    }
+
+    .contents-wrapper .interaction .back-to-choose-btn {
+        position: absolute;
+        left: 30%;
+        bottom: 40%;
+    }
+
     .contents-wrapper .interaction .issues {
         position: absolute;
         width: 100%;
         height: 4vh;
         left: 0;
-        bottom: 0;
+        bottom: 4vh;
         text-decoration: underline;
         cursor: pointer;
         font-size: 12px;
         text-align: center;
     }
 
+    .contents-wrapper .interaction .page-title {
+        position: relative;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 10vh;
+    }
+
+    .contents-wrapper .interaction .page-2 .page-content {
+        position: relative;
+        width: 80%;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 2vh;
+        text-align: left;
+    }
+
+    .contents-wrapper .interaction .page-4 .page-content {
+        position: relative;
+        width: 80%;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 2vh;
+        text-align: center;
+    }
+
+    .contents-wrapper .interaction .page-3 .question {
+        position: relative;
+        width: 80%;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-top: 1vh;
+        text-align: left;
+    }
+
+    .contents-wrapper .interaction .page-3 .options-wrapper {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+
+    .contents-wrapper .interaction .page-3 .options-wrapper .option {
+        position: relative;
+        width: 100%;
+        height: 12px;
+        margin-top: 2vh;
+    }
+
+    .options-wrapper .option .check-box {
+        position: relative;
+        width: 12px;
+        height: 12px;
+        float: left;
+        border: 1px solid white;
+    }
+
+    .options-wrapper .option .choice-icon {
+        display: none;
+        position: absolute;
+        width: 16px;
+        height: auto;
+        left: 0;
+        top: -4px;
+    }
+
+    .options-wrapper .option .option-text {
+        position: relative;
+        width: auto;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: left;
+        margin-left: 2vw;
+        float: left;
+    }
+
+    .contents-wrapper .interaction .page-3 .inputs-wrapper {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+
+    .inputs-wrapper .input-wrapper {
+        position: relative;
+        width: 100%;
+        height: 32px;
+        margin: 0 auto;
+        margin-top: 2vh;
+    }
+
+    .input-wrapper .input-name {
+        position: relative;
+        width: auto;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: left;
+    }
+
+    .input-wrapper input {
+        position: absolute;
+        width: 100%;
+        height: 16px;
+        left: 0;
+        bottom: 0;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        outline: none;
+        font-size: 12px;
+        color: white;
+        font-weight: lighter;
+    }
+
+    ::-webkit-input-placeholder {
+        color: rgba(255,255,255,0.3);
+    }
+
+    .inputs-wrapper .district-input {
+        position: absolute;
+        width: 100%;
+        height: 16px;
+        left: 0;
+        bottom: 0;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .inputs-wrapper .district-input .districts-wrapper {
+        display: none;
+        position: absolute;
+        width: 30%;
+        height: 0px;
+        left: 0;
+        top: 0;
+        background-color: black;
+        border: 1px solid white;
+        z-index: 10;
+    }
+
+    .inputs-wrapper .district-input .value {
+        position: relative;
+        width: auto;
+        font-size: 12px;
+        line-height: 12px;
+        text-align: left;
+    }
+
+    .inputs-wrapper .district-input .districts-wrapper p {
+        position: relative;
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: left;
+    }
 
 
 </style>
@@ -742,19 +946,104 @@
             </div>
 
             <div class="content-item interaction">
-                <div class="page page-1">
+                <div class="page page-1" style="display: block">
                     <div class="interaction-wrapper">
                         <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/interaction-1.jpg" alt="">
                     </div>
                     <p class="title">参与互动问答,免费赢取200元代金券</p>
                     <p class="detail">适用于 CERRUTI 1881 中国大陆正价店</p>
-                    <div class="enter-btn"><p>点击进入</p></div>
+                    <div class="interaction-btn enter-btn"><p>点击进入</p></div>
                     <p class="issues">条款及细则</p>
                 </div>
-                <div class="page page-2"></div>
-                <div class="page page-3"></div>
-                <div class="page page-4"></div>
-                <div class="page page-5"></div>
+                <div class="page page-2">
+                    <p class="page-title">条款及细则</p>
+                    <p class="page-content">
+1. 活动时间:<br>
+    2016年9月1日-2016年9月30日23:59 (北京时间)<br>
+2. 参与方法:<br>
+    参与者需关注CERRUTI 1881微信账号,回答简单问题及<br>
+   填写真实的个人信息,回答正确者即可赢取200元代金劵。<br>
+3. 奖品设置:<br>
+- 每人限获奖一次。<br>
+- 200元代金券适用于CERRUTI 1881中国大陆正价店购买<br>
+    2016秋冬新品时直接抵用。<br>
+- 不适用于公价和打折商品。<br>
+-每笔消费限用一张代金券,不能兑换现金。<br>
+4. 隐私保障和个人资料:<br>
+    本次活动所收集的个人信息將会由主办方严格保密,并作为<br>
+    本活动及日后推广用途。<br><br>
+
+CERRUTI 1881保留修定条款及细则之权利,如有任何争议, CERRUTI 1881 在法律范围内保留最终解释权 。</p>
+                    <div class="interaction-btn back-btn"><p>返回</p></div>
+                </div>
+                <div class="page page-3">
+                    <p class="page-title">问 题</p>
+                    <p class="question">CERRUTI 1881 2016-17秋冬季系列的设计师是_____?</p>
+                    <div class="options-wrapper">
+                        <div class="option option-a" optionValue="A">
+                            <div class="check-box"></div>
+                            <img src="./static/img/ok.png" alt="" class="choice-icon">
+                            <p class="option-text">A.Peter Lindbergh</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="option option-b" optionValue="B">
+                            <div class="check-box"></div>
+                            <img src="./static/img/ok.png" alt="" class="choice-icon">
+                            <p class="option-text">B.Jason Basmajian</p>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="option option-c" optionValue="C">
+                            <div class="check-box"></div>
+                            <img src="./static/img/ok.png" alt="" class="choice-icon">
+                            <p class="option-text">C.Andres Velencoso</p>
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                    <p class="page-title">个人信息</p>
+                    <div class="inputs-wrapper">
+                        <div class="input-wrapper">
+                            <p class="input-name">姓名</p>
+                            <input type="text" name="name" aria-label="姓名" placeholder='请填写姓名'>
+                        </div>
+                        <div class="input-wrapper">
+                            <p class="input-name">邮箱</p>
+                            <input type="text" name="name" aria-label="姓名" placeholder='请填写邮箱'>
+                        </div>
+                        <div class="input-wrapper">
+                            <p class="input-name">地区</p>
+                            <div class="district-input">
+                                <p class="value">请点击选择地区</p>
+                                <div class="districts-wrapper">
+                                    <p>中国大陆地区</p>
+                                    <p>香港</p>
+                                    <p>澳门</p>
+                                    <p>台湾</p>
+                                    <p>其他</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper">
+                            <p class="input-name">手机号码</p>
+                            <input type="text" name="name" aria-label="姓名" placeholder='请填写手机号码'>
+                        </div>
+                    </div>
+                    <div class="interaction-btn submit-btn"><p>提交</p></div>
+                </div>
+                <div class="page page-4">
+                    <p class="page-title">恭喜您答对了!</p>
+                    <p class="page-content">CERRUTI 1881 2016-17秋冬季系列的</br>
+                        设计师是 Jason Basmajian
+                    </p>
+                    <img style="display:block;width: 80%;height: auto;margin: 0 auto;margin-top: 10vh" src="./static/img/right.png" alt="">
+                    <div class="interaction-btn get-btn"><p>请点击领取代金券</p></div>
+                </div>
+                <div class="page page-5">
+                    <p class="page-title">您的答题错误了！</p>
+                    <img style="display:block;width: 30%;height: auto;margin: 0 auto;margin-top: 10vh" src="./static/img/error.png" alt="">
+                    <div class="interaction-btn back-to-choose-btn"><p>重新答题</p></div>
+                    <div class="interaction-btn back-to-main-btn"><p>回到主页</p></div>
+                    <div class="interaction-btn go-to-website-btn"><p>浏览官方网站</p></div>
+                </div>
             </div>
         </div>
     </section>
