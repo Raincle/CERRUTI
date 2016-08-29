@@ -94,6 +94,9 @@ $(function() {
     relayoutBG('.contents-wrapper .adverse .adverse-wrapper .bg');
     //About;
     relayoutBG('.contents-wrapper .about .about-wrapper .bg');
+    relayoutBG('.contents-wrapper .about .jason-avatar-wrapper img');
+    relayoutBG('.contents-wrapper .about .peter-avatar-wrapper img');
+    relayoutBG('.contents-wrapper .about .andres-avatar-wrapper img');
     //Introduce;
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
