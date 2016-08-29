@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688d0358-9bbd-4c01-9924-0252ab06b02a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/introduce-2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/introduce-3.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/error.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/introduce-4.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/introduce-5.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/ok.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/img/right.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/cerruti.js" afterPath="$PROJECT_DIR$/static/js/cerruti.js" />
@@ -31,8 +34,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7810219">
-              <caret line="638" column="26" selection-start-line="638" selection-start-column="26" selection-end-line="638" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.62530416">
+              <caret line="466" column="5" selection-start-line="466" selection-start-column="5" selection-end-line="466" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -42,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/static/js/cerruti.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+              <caret line="103" column="89" selection-start-line="103" selection-start-column="89" selection-end-line="103" selection-end-column="89" />
               <folding />
             </state>
           </provider>
@@ -487,15 +490,30 @@
     <entry file="file://$PROJECT_DIR$/static/js/cerruti.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+          <caret line="103" column="89" selection-start-line="103" selection-start-column="89" selection-end-line="103" selection-end-column="89" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/error.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/right.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/ok.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7810219">
-          <caret line="638" column="26" selection-start-line="638" selection-start-column="26" selection-end-line="638" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.62530416">
+          <caret line="466" column="5" selection-start-line="466" selection-start-column="5" selection-end-line="466" selection-end-column="5" />
           <folding />
         </state>
       </provider>

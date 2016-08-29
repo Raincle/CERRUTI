@@ -101,6 +101,8 @@ $(function() {
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .bottom-block img');
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-3 .top-block img');
+    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-3 .bottom-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
     //Product;
     relayoutBG('.contents-wrapper .product .product-wrapper .bg');
