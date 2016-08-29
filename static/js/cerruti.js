@@ -133,8 +133,8 @@ $(function() {
         $('.contents-wrapper .product .img-selector').css({display:'block'});
     });
 
-    $('.img-gallery .img-item').css({width: windowWidth * 0.9, marginLeft: windowWidth * 0.1 });
-    $('.img-gallery .img-item').first().css({marginLeft: windowWidth * 0.05 });
+    $('.img-gallery .img-item').css({width: windowWidth * 0.8, marginLeft: windowWidth * 0.2 });
+    $('.img-gallery .img-item').first().css({marginLeft: windowWidth * 0.1 });
     $('.img-selector .img-item').css({width: windowWidth / 9});
 
 
