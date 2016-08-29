@@ -4,6 +4,7 @@ $(function() {
 
     var contentState = "adverse";
     var introduceState = 0;
+    var productState = 0;
 
     function changeContentState(state) {
         $('.contents-wrapper .content-item').css({display: 'none'});
@@ -40,6 +41,25 @@ $(function() {
         changeIntrduceState(-1);
     });
 
+
+    function changeProductState(state) {
+        productState = productState + state;
+        if (productState < -8) {
+            productState = 0;
+        } else if (productState > 0) {
+            productState = -8;
+        }
+        var pageLeft = $('.contents-wrapper .product').width() * productState;
+        $('.contents-wrapper .product .img-gallery').animate({left: pageLeft}, 'normal');
+    }
+
+    $('.contents-wrapper .product .arrow-left').click(function() {
+        changeProductState(1);
+    });
+
+    $('.contents-wrapper .product .arrow-right').click(function() {
+        changeProductState(-1);
+    });
 
         //Scroll;
     $(".cerruti").onepage_scroll({
@@ -102,6 +122,22 @@ $(function() {
     //Product;
     //Interaction;
 
+
+    $('.preview-wrapper img').click(function() {
+        $('.contents-wrapper .product .product-wrapper').css({display:'none'});
+        $('.contents-wrapper .product .desc').css({display:'none'});
+        $('.contents-wrapper .product .preview-wrapper').css({display:'none'});
+        $('.contents-wrapper .product .arrow-left').css({display:'block'});
+        $('.contents-wrapper .product .arrow-right').css({display:'block'});
+        $('.contents-wrapper .product .img-gallery').css({display:'block'});
+        $('.contents-wrapper .product .img-selector').css({display:'block'});
+    });
+
+    $('.img-gallery .img-item').css({width: windowWidth * 0.9, marginLeft: windowWidth * 0.1 });
+    $('.img-gallery .img-item').first().css({marginLeft: windowWidth * 0.05 });
+    $('.img-selector .img-item').css({width: windowWidth / 9});
+
+
     $('.contents-wrapper .interaction .enter-btn').click(function() {
         $('.contents-wrapper .interaction .page').css({display:'none'});
         $('.contents-wrapper .interaction .page-3').css({display:'block'});
@@ -162,4 +198,5 @@ $(function() {
     $('.contents-wrapper .interaction .page-5 .go-to-website-btn').click(function() {
         window.location.href = "http://www.cerruti.com";
     });
+
 });

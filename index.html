@@ -519,6 +519,40 @@
         text-align: center;
     }
 
+    .contents-wrapper .product .arrow-left {
+        position: absolute;
+        left: 4vw;
+        top: 45%;
+        width: 4vw;
+        height: auto;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .contents-wrapper .product .arrow-left img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .contents-wrapper .product .arrow-right {
+        position: absolute;
+        right: 4vw;
+        top: 45%;
+        width: 4vw;
+        height: auto;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .contents-wrapper .product .arrow-right img {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
     .contents-wrapper .interaction .page {
         display: none;
         position: relative;
@@ -784,6 +818,18 @@
         text-align: left;
     }
 
+    .img-gallery .img-item {
+        position: relative;
+        height: auto;
+        float: left;
+    }
+
+    .img-selector .img-item {
+        position: relative;
+        height: auto;
+        margin-top: 4vh;
+        float: left;
+    }
 
 </style>
 
@@ -935,13 +981,43 @@
             </div>
 
             <div class="content-item product">
+                <div style="display: none" class="arrow-left">
+                    <img src="./static/img/AR2.png" alt="">
+                </div>
+                <div style="display: none" class="arrow-right">
+                    <img src="./static/img/AR3.png" alt="">
+                </div>
                 <div class="product-wrapper">
                     <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/product-video.jpg" alt="">
                     <img class="play-btn" src="./static/img/play.png" alt="">
                 </div>
                 <p class="desc">CERRUTI 1881  2016-17秋冬系列巴黎時裝秀</p>
                 <div class="preview-wrapper">
-                    <img style="position:absolute;width: 100%;height: auto;left: 0;bottom: 0" src="./static/img/product-preview.jpg" alt="">
+                    <img style="position:absolute;width: 100%;height: auto;left: 0;bottom: 0;cursor: pointer" src="./static/img/product-preview.jpg" alt="">
+                </div>
+                <div class="img-gallery" style="display:none;position: absolute;width: 900%;height: 80%;left: 0;top: 2vh;overflow: hidden">
+                    <img class="img-item" src="./static/img/12.jpg" alt="">
+                    <img class="img-item" src="./static/img/13.jpg" alt="">
+                    <img class="img-item" src="./static/img/14.jpg" alt="">
+                    <img class="img-item" src="./static/img/15.jpg" alt="">
+                    <img class="img-item" src="./static/img/16.jpg" alt="">
+                    <img class="img-item" src="./static/img/17.jpg" alt="">
+                    <img class="img-item" src="./static/img/18.jpg" alt="">
+                    <img class="img-item" src="./static/img/19.jpg" alt="">
+                    <img class="img-item" src="./static/img/20.jpg" alt="">
+                    <div class="clear"></div>
+                </div>
+                <div class="img-selector" style="display:none;position: absolute;width: 100%;height: 20%;left: 0;bottom: 0;overflow: hidden">
+                    <img class="img-item" src="./static/img/12.jpg" alt="">
+                    <img class="img-item" src="./static/img/13.jpg" alt="">
+                    <img class="img-item" src="./static/img/14.jpg" alt="">
+                    <img class="img-item" src="./static/img/15.jpg" alt="">
+                    <img class="img-item" src="./static/img/16.jpg" alt="">
+                    <img class="img-item" src="./static/img/17.jpg" alt="">
+                    <img class="img-item" src="./static/img/18.jpg" alt="">
+                    <img class="img-item" src="./static/img/19.jpg" alt="">
+                    <img class="img-item" src="./static/img/20.jpg" alt="">
+                    <div class="clear"></div>
                 </div>
             </div>
 
