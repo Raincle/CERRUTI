@@ -149,7 +149,7 @@
     .container .tabs-wrapper {
         position: relative;
         width: 90vw;
-        height: 10vh;
+        height: 6vh;
         margin: 0 auto;
         margin-top: 2vh;
         border-left: 1px solid white;
@@ -167,7 +167,7 @@
     .seperator-1 {
         position: absolute;
         width: 1px;
-        height: 80%;
+        height: 100%;
         left: 20%;
         top: 0;
         background-color: white;
@@ -176,7 +176,7 @@
     .seperator-2 {
         position: absolute;
         width: 1px;
-        height: 80%;
+        height: 100%;
         left: 40%;
         top: 0;
         background-color: white;
@@ -185,7 +185,7 @@
     .seperator-3 {
         position: absolute;
         width: 1px;
-        height: 80%;
+        height: 100%;
         left: 60%;
         top: 0;
         background-color: white;
@@ -194,7 +194,7 @@
     .seperator-4 {
         position: absolute;
         width: 1px;
-        height: 80%;
+        height: 100%;
         left: 80%;
         top: 0;
         background-color: white;
@@ -211,7 +211,7 @@
     .tab-item p {
         position: relative;
         width: 100%;
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
         margin: 0 auto;
         margin-top: 10%;
@@ -220,14 +220,14 @@
     .contents-wrapper {
         position: relative;
         width: 100vw;
-        height: 88vh;
+        height: 92vh;
         margin: 0 auto;
     }
 
     .contents-wrapper .content-item {
         display: none;
         position: relative;
-        width: 90%;
+        width: 100%;
         height: 100%;
         margin: 0 auto;
         overflow: hidden;
@@ -246,6 +246,7 @@
         width: 100%;
         height: 40%;
         margin: 0 auto;
+        margin-top: 2vh;
         overflow: hidden;
     }
 
@@ -259,28 +260,29 @@
 
     .contents-wrapper .adverse .desc {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
+        margin-top: 2vh;
         font-size: 12px;
         text-align: left;
     }
 
-
      .contents-wrapper .about .about-wrapper {
         position: relative;
         width: 100%;
-        height: 20%;
+        height: 30%;
         margin: 0 auto;
+         margin-top: 2vh;
         overflow: hidden;
     }
 
      .contents-wrapper .about .jason {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 16%;
         margin: 0 auto;
-         margin-top: 4vh;
+         margin-top: 2vh;
         overflow: hidden;
      }
 
@@ -299,16 +301,16 @@
          float: left;
          margin: 0 auto;
          margin-left: 5%;
-         font-size: 12px;
+         font-size: 10px;
          text-align: left;
      }
 
     .contents-wrapper .about .peter {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 16%;
         margin: 0 auto;
-         margin-top: 4vh;
+         margin-top: 2vh;
         overflow: hidden;
      }
 
@@ -327,16 +329,16 @@
          float: left;
          margin: 0 auto;
          margin-right: 5%;
-         font-size: 12px;
+         font-size: 10px;
          text-align: left;
      }
 
     .contents-wrapper .about .andres {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: 16%;
         margin: 0 auto;
-         margin-top: 4vh;
+         margin-top: 2vh;
         overflow: hidden;
      }
 
@@ -355,7 +357,7 @@
          float: left;
          margin: 0 auto;
          margin-left: 5%;
-         font-size: 12px;
+         font-size: 10px;
          text-align: left;
      }
 
@@ -369,22 +371,19 @@
 
     .contents-wrapper .about .desc {
         position: relative;
-        width: 100%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
-        font-size: 12px;
+        margin-top: 2vh;
+        font-size: 10px;
         text-align: left;
     }
 
 
-    .contents-wrapper .introduce {
-        width: 100%;
-    }
-
     .contents-wrapper .introduce .arrow-left {
         position: absolute;
         left: 4vw;
-        top: 40%;
+        top: 45%;
         width: 4vw;
         height: auto;
         cursor: pointer;
@@ -401,7 +400,7 @@
     .contents-wrapper .introduce .arrow-right {
         position: absolute;
         right: 4vw;
-        top: 40%;
+        top: 45%;
         width: 4vw;
         height: auto;
         cursor: pointer;
@@ -413,6 +412,10 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
+    }
+
+    .contents-wrapper .introduce {
+        margin-top: 2vh;
     }
 
     .contents-wrapper .introduce .introduce-wrapper {
@@ -458,9 +461,15 @@
 
     .contents-wrapper .introduce .introduce-wrapper .page-3 .center-block {
         position: relative;
-        width: 80%;
+        width: 100%;
         height: 20%;
-        line-height: 20%;
+        margin: 0 auto;
+    }
+
+    .contents-wrapper .introduce .introduce-wrapper .page-3 .center-block p {
+        position: relative;
+        width: 80%;
+        line-height: 1.5;
         margin: 0 auto;
         font-size: 12px;
         text-align: left;
@@ -474,12 +483,21 @@
         overflow: hidden;
     }
 
-
     .contents-wrapper .product .product-wrapper {
         position: relative;
         width: 100%;
         height: 30%;
         margin: 0 auto;
+        margin-top: 2vh;
+        overflow: hidden;
+    }
+
+    .contents-wrapper .product .product-wrapper .preview-wrapper {
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        left: 0;
+        bottom: 0;
         overflow: hidden;
     }
 
@@ -496,6 +514,7 @@
         width: 100%;
         height: auto;
         margin: 0 auto;
+        margin-top: 2vh;
         font-size: 12px;
         text-align: center;
     }
@@ -505,6 +524,7 @@
         width: 100%;
         height: 60%;
         margin: 0 auto;
+        margin-top: 2vh;
         overflow: hidden;
     }
 
@@ -635,8 +655,8 @@
                     <img class="bg" src="./static/img/adverse.jpg" alt="">
                     <img class="play-btn" src="./static/img/play.png" alt="">
                 </div>
-                <p class="desc">CERRUTI 1881 2016-17秋冬广告大片演绎品牌休闲简约的男士优雅美学。</br>
-广告由国际著名摄影大师 Peter Lindbergh 在巴黎工作室拍摄,主角为超模巨星Andres Velencoso, Andres 亦是 CERRUTI 1881香氛广告的主角。</br>
+                <p class="desc">CERRUTI 1881 2016-17秋冬广告大片演绎品牌休闲简约的男士优雅美学。</br></br>
+广告由国际著名摄影大师 Peter Lindbergh 在巴黎工作室拍摄,主角为超模巨星Andres Velencoso, Andres 亦是 CERRUTI 1881香氛广告的主角。</br></br>
 灵感源自品牌多年以来与电影的紧密联系,完美诠释男装的精致剪裁与面料的超卓质感。在自然光线与工作室场景的映衬下,全新系列的独特个性完美呈现,同时也聚焦成衣, 配饰以及广告主角。</p>
             </div>
 
@@ -663,9 +683,12 @@
                         <div class="top-block">
                             <img src="./static/img/introduce-4.jpg" alt="" class="bg">
                         </div>
-                        <p class="center-block">崭新的剪裁美学融合体现在一系列单品当中,其中包括双扣式西套外套、直身剪裁或双襟式大衣,三件式套装搭配马甲,柔和修长的线条恰到好处地强调男士的廓形。</p>
+                        <div class="center-block">
+                            <div style="width: 100%;height: 6vh;margin: 0 auto"></div>
+                            <p>崭新的剪裁美学融合体现在一系列单品当中,其中包括双扣式西套外套、直身剪裁或双襟式大衣,三件式套装搭配马甲,柔和修长的线条恰到好处地强调男士的廓形。</p>
+                        </div>
                         <div class="bottom-block">
-                            <img src="./static/img/introduce-5.jpg" alt="" class="bg">
+                            <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/introduce-5.jpg" alt="">
                         </div>
                     </div>
                     <div class="page page-4">
@@ -677,13 +700,13 @@
 
             <div class="content-item about">
                 <div class="about-wrapper">
-                    <img class="bg" src="./static/img/about.jpg" alt="">
+                    <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/about.jpg" alt="">
                     <img class="play-btn" src="./static/img/play.png" alt="">
                 </div>
                 <p class="desc">CERRUTI 1881 首席创意执行官Jason Basmajian 说道:“我们非常高兴能与 Peter 合作,全新广告大片既简约又瞩目,以CERRUTI 1881 的品牌DNA 开展了一段视觉对话。我们的对话让我充分的感受到 Peter 的热情、经验以及他对品牌的了解,这些都融入在全新系列的广告大片当中。”</p>
                 <div class="jason">
                     <div class="jason-avatar-wrapper">
-                        <img src="./static/img/jason-avatar.jpg" alt="">
+                        <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/jason-avatar.jpg" alt="">
                     </div>
                     <p class="about-jason">品牌首席创意总监 Jason Basmajian</br>
 于 2015 年10加入CERRUTI 1881,为品牌制定全新创作去向。曾协助同集团旗下另一品牌Gieves&Hawkes蜕变成为创意非凡的国际高级男装品牌。</p>
@@ -693,13 +716,13 @@
                     <p class="about-peter">著名摄影师 Peter Lindbergh</br>
 以拍摄令人难忘且极富电影质感照片而闻名于世,一直与诸多殿堂级时尚品牌和杂志合作, 其中包括《Vogue》、 《The New Yorker》、《Rolling Stone》、《Harper’s Bazaar》等。</p>
                     <div class="peter-avatar-wrapper">
-                        <img src="./static/img/peter-avatar.jpg" alt="">
+                        <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/peter-avatar.jpg" alt="">
                     </div>
                     <div class="clear"></div>
                 </div>
                 <div class="andres">
                     <div class="andres-avatar-wrapper">
-                        <img src="./static/img/andres-avatar.jpg" alt="">
+                        <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/andres-avatar.jpg" alt="">
                     </div>
                     <p class="about-andres">顶级超模 Andres Velencoso</br>
 最享负盛名的超级男模特之一,曾经登上《L’Off iciel Hommes》、《Elle》及《Vanity Fair》等诸多国际一线杂志封面。曾在 MODELS.com “顶级风尚男士” 名人榜上排名第六。</p>
@@ -709,15 +732,19 @@
 
             <div class="content-item product">
                 <div class="product-wrapper">
-                    <img class="bg" src="./static/img/product-video.jpg" alt="">
+                    <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/product-video.jpg" alt="">
                     <img class="play-btn" src="./static/img/play.png" alt="">
                 </div>
                 <p class="desc">CERRUTI 1881  2016-17秋冬系列巴黎時裝秀</p>
+                <div class="preview-wrapper">
+                    <img style="position:absolute;width: 100%;height: auto;left: 0;bottom: 0" src="./static/img/product-preview.jpg" alt="">
+                </div>
             </div>
+
             <div class="content-item interaction">
                 <div class="page page-1">
                     <div class="interaction-wrapper">
-                        <img class="bg" src="./static/img/interaction-1.jpg" alt="">
+                        <img style="width: 100%;height: auto;margin: 0 auto" src="./static/img/interaction-1.jpg" alt="">
                     </div>
                     <p class="title">参与互动问答,免费赢取200元代金券</p>
                     <p class="detail">适用于 CERRUTI 1881 中国大陆正价店</p>

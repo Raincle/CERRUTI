@@ -93,20 +93,12 @@ $(function() {
     //Adverse;
     relayoutBG('.contents-wrapper .adverse .adverse-wrapper .bg');
     //About;
-    relayoutBG('.contents-wrapper .about .about-wrapper .bg');
-    relayoutBG('.contents-wrapper .about .jason-avatar-wrapper img');
-    relayoutBG('.contents-wrapper .about .peter-avatar-wrapper img');
-    relayoutBG('.contents-wrapper .about .andres-avatar-wrapper img');
     //Introduce;
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .bottom-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-3 .top-block img');
-    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-3 .bottom-block img');
     relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
     //Product;
-    relayoutBG('.contents-wrapper .product .product-wrapper .bg');
     //Interaction;
-    relayoutBG('.contents-wrapper .interaction .page-1 .interaction-wrapper .bg');
-
 });
