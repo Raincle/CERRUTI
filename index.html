@@ -939,6 +939,16 @@
         float: left;
     }
 
+    .error-tip {
+        display: none;
+        position: absolute;
+        width: auto;
+        font-size: 12px;
+        color: red;
+        right: 0;
+        bottom: 0;
+    }
+
 </style>
 
 <body>
@@ -1041,7 +1051,7 @@
                     </div>
                     <div class="page page-2">
                         <div class="top-block">
-                            <img style="width: 100%;height: 100%;margin: 0 auto" src="http://ocq36fh4i.bkt.clouddn.com/introduce-2.jpg" alt="" class="bg">
+                            <img style="width: 100%;height: 100%;margin: 0 auto" src="http://ocq36fh4i.bkt.clouddn.com/introduce-2v1.jpg" alt="" class="bg">
                             <!--<div class="detail">-->
                                 <!--<p>矿物、土系、花岗岩、</br>-->
 <!--大理石和金属等天然</br>-->
@@ -1226,15 +1236,17 @@ CERRUTI 1881保留修定条款及细则之权利,如有任何争议, CERRUTI 188
                     </div>
                     <p class="page-title">个人信息</p>
                     <div class="inputs-wrapper">
-                        <div class="input-wrapper">
+                        <div class="input-wrapper name">
                             <p class="input-name">姓名</p>
                             <input type="text" name="name" aria-label="姓名" placeholder='请填写姓名'>
+                            <p class="error-tip">请填写姓名</p>
                         </div>
-                        <div class="input-wrapper">
-                            <p class="input-name">邮箱</p>
-                            <input type="text" name="name" aria-label="姓名" placeholder='请填写邮箱'>
+                        <div class="input-wrapper birthday">
+                            <p class="input-name">出生年月</p>
+                            <input type="text" name="birthday" aria-label="姓名" placeholder='请填写出生年月'>
+                            <p class="error-tip">请填写出生年月</p>
                         </div>
-                        <div class="input-wrapper">
+                        <div class="input-wrapper district">
                             <p class="input-name">地区</p>
                             <div class="district-input">
                                 <p class="value">请点击选择地区</p>
@@ -1246,10 +1258,12 @@ CERRUTI 1881保留修定条款及细则之权利,如有任何争议, CERRUTI 188
                                     <p>其他</p>
                                 </div>
                             </div>
+                            <p class="error-tip">请选择地区</p>
                         </div>
-                        <div class="input-wrapper">
+                        <div class="input-wrapper phonenum">
                             <p class="input-name">手机号码</p>
                             <input type="text" name="name" aria-label="姓名" placeholder='请填写手机号码'>
+                            <p class="error-tip">无效的手机号</p>
                         </div>
                     </div>
                     <div class="interaction-btn submit-btn"><p>提交</p></div>
