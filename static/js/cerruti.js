@@ -12,8 +12,9 @@ $(function() {
         $(className).css({display: 'block'});
 
         //Dismiss video;
-        $('.video-screen').css({display:'none'});
-        $('#long-video').attr("src","");
+        $('.adverse #long-video').attr("src","");
+        $('.about #long-video').attr("src","");
+        $('.product #long-video').attr("src","");
     }
 
     $('.menu .menu-item').click(function() {
@@ -126,18 +127,15 @@ $(function() {
 
     //Video;
     $('.contents-wrapper .adverse .play-btn').click(function() {
-        $('.video-screen').css({display:'block'});
-        $('#long-video').attr("src","./static/video/adverse.mp4");
+        $('.adverse #long-video').attr("src","./static/video/adverse.mp4");
     });
 
     $('.contents-wrapper .about .play-btn').click(function() {
-        $('.video-screen').css({display:'block'});
-        $('#long-video').attr("src","./static/video/about.mp4");
+        $('.about #long-video').attr("src","./static/video/about.mp4");
     });
 
     $('.contents-wrapper .product .play-btn').click(function() {
-        $('.video-screen').css({display:'block'});
-        $('#long-video').attr("src","./static/video/product.mp4");
+        $('.product #long-video').attr("src","./static/video/product.mp4");
     });
 
 
