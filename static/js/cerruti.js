@@ -91,10 +91,8 @@ $(function() {
                 case 2:
                     break;
                 case 3:
-                    //$('body').on('touchmove', function (event) {
-                    //    event.preventDefault();
-                    //    event.stopPropagation();
-                    //},true);
+                    $('.cerruti .poster').remove();
+                    $('.cerruti .menu').remove();
                     break;
                 default:
                     break;
