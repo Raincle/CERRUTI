@@ -123,7 +123,7 @@ $(function() {
         $(".cerruti").moveDown();
     });
     //Img process;
-    relayoutBG('.poster .main-img-wrapper img');
+    $('.poster .main-img-wrapper img').isacover();
     relayoutBG('.menu .menu-item .bg');
     //Adverse;
     relayoutBG('.contents-wrapper .adverse .adverse-wrapper .bg');

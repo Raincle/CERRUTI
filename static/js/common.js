@@ -14,7 +14,6 @@ function relayoutBG(selector) {
 
         if (imgRatio<=windowRatio) {
             $(selector).css({
-                opacity: 1,
                 width:'100%',
                 height:'auto',
                 left:0,
@@ -22,7 +21,6 @@ function relayoutBG(selector) {
             });
         } else {
             $(selector).css({
-                opacity: 1,
                 width:'auto',
                 height:'100%',
                 left:centerLeft,
