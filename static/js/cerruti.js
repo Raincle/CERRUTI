@@ -128,6 +128,7 @@ $(function() {
     //Adverse;
     $('.contents-wrapper .adverse .adverse-wrapper .bg').isacover();
     //About;
+    $('.contents-wrapper .about .about-wrapper .bg').isacover();
     //Introduce;
     $('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg').isacover();
     $('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img').isacover();
