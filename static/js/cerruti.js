@@ -123,18 +123,7 @@ $(function() {
         $(".cerruti").moveDown();
     });
     //Img process;
-    $('.poster .main-img-wrapper img').isacover();
-    $('.menu .menu-item .bg').isacover();
-    //Adverse;
-    $('.contents-wrapper .adverse .adverse-wrapper .bg').isacover();
-    //About;
-    $('.contents-wrapper .about .about-wrapper .bg').isacover();
-    //Introduce;
-    $('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg').isacover();
-    $('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img').isacover();
-    $('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg').isacover();
-    //Product;
-    //Interaction;
+
 
 
     //Video;
