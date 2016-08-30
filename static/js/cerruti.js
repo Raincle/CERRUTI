@@ -17,6 +17,7 @@ $(function() {
         $('.product #long-video').attr("src","");
 
         $('.play-btn').css({display:'block'});
+        $('.video-bg').css({display:'block'});
     }
 
     $('.menu .menu-item').click(function() {
@@ -130,16 +131,19 @@ $(function() {
     //Video;
     $('.contents-wrapper .adverse .play-btn').click(function() {
         $(this).css({display:'none'});
+        $('.contents-wrapper .adverse .adverse-wrapper .video-bg').css({display:'none'});
         $('.adverse #long-video').attr("src","./static/video/adverse.mp4");
     });
 
     $('.contents-wrapper .about .play-btn').click(function() {
         $(this).css({display:'none'});
+        $('.contents-wrapper .about .about-wrapper .video-bg').css({display:'none'});
         $('.about #long-video').attr("src","./static/video/about.mp4");
     });
 
     $('.contents-wrapper .product .play-btn').click(function() {
         $(this).css({display:'none'});
+        $('.contents-wrapper .product .product-wrapper .video-bg').css({display:'none'});
         $('.product #long-video').attr("src","./static/video/product.mp4");
     });
 
