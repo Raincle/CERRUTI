@@ -183,8 +183,7 @@ $(function() {
         $('.contents-wrapper .interaction .page-1').css({display:'block'});
     });
 
-    var rightAnswer = "A"
-    var choice = ""
+    var choice = "";
     $('.contents-wrapper .interaction .page-3 .options-wrapper .option').click(function() {
         $('.contents-wrapper .interaction .page-3 .options-wrapper .choice-icon').css({display:'none'});
         $(this).find('.choice-icon').css({display:'block'});
