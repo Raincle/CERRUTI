@@ -91,10 +91,10 @@ $(function() {
                 case 2:
                     break;
                 case 3:
-                    $('body').on('touchmove', function (event) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                    },false);
+                    //$('body').on('touchmove', function (event) {
+                    //    event.preventDefault();
+                    //    event.stopPropagation();
+                    //},true);
                     break;
                 default:
                     break;
@@ -110,6 +110,10 @@ $(function() {
         display: 'none',
         top:(windowHeight-$('.onepage-pagination').height())/2
     });
+
+    $('body').on('touchmove', function (event) {
+        event.preventDefault();
+    },false);
 
 
     $('.poster .down-arrow').click(function() {
