@@ -15,6 +15,8 @@ $(function() {
         $('.adverse #long-video').attr("src","");
         $('.about #long-video').attr("src","");
         $('.product #long-video').attr("src","");
+
+        $('.play-btn').css({display:'block'});
     }
 
     $('.menu .menu-item').click(function() {
@@ -127,14 +129,17 @@ $(function() {
 
     //Video;
     $('.contents-wrapper .adverse .play-btn').click(function() {
+        $(this).css({display:'none'});
         $('.adverse #long-video').attr("src","./static/video/adverse.mp4");
     });
 
     $('.contents-wrapper .about .play-btn').click(function() {
+        $(this).css({display:'none'});
         $('.about #long-video').attr("src","./static/video/about.mp4");
     });
 
     $('.contents-wrapper .product .play-btn').click(function() {
+        $(this).css({display:'none'});
         $('.product #long-video').attr("src","./static/video/product.mp4");
     });
 
