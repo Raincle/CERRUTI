@@ -124,14 +124,14 @@ $(function() {
     });
     //Img process;
     $('.poster .main-img-wrapper img').isacover();
-    relayoutBG('.menu .menu-item .bg');
+    $('.menu .menu-item .bg').isacover();
     //Adverse;
-    relayoutBG('.contents-wrapper .adverse .adverse-wrapper .bg');
+    $('.contents-wrapper .adverse .adverse-wrapper .bg').isacover();
     //About;
     //Introduce;
-    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg');
-    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img');
-    relayoutBG('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg');
+    $('.contents-wrapper .introduce .introduce-wrapper .page-1 .bg').isacover();
+    $('.contents-wrapper .introduce .introduce-wrapper .page-2 .top-block img').isacover();
+    $('.contents-wrapper .introduce .introduce-wrapper .page-4 .bg').isacover();
     //Product;
     //Interaction;
 
