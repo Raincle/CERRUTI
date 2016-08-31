@@ -299,6 +299,17 @@ $(function() {
                 $('.contents-wrapper .interaction .page-5').css({display:'block'});
             }
             //Send user info;
+            function postSuccess(response) {
+                console.log(response)
+            }
+            var dataToPost = {
+                username: name,
+                district: district,
+                phonenum: phonenum,
+                token: "xiaohong",
+            }
+            postData('',dataToPost,postSuccess)
+
         }
 
 

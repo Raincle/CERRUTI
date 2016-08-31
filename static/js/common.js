@@ -33,3 +33,41 @@ function relayoutBG(selector) {
 
 }
 
+
+
+var baseAPI = "http://api.uu32.com";
+
+
+//Reuse Items;
+$(function() {
+});
+
+
+
+//Common Functions;
+function api(api) {
+    return baseAPI + api;
+};
+
+function postData(apiSuffix,data,_success) {
+    $.ajax({
+        type: 'post',
+        url: api(apiSuffix),
+        data: data,
+        dataType: "json",
+        success: function(response) {
+            switch (response.code) {
+                case 1 :
+                    _success(response);
+                    break;
+                case -1:
+                    alert(JSON.stringify(response.msg));
+                    break;
+                default:
+                    alert(apiSuffix+JSON.stringify(response.msg));
+                    break;
+            };
+        }
+    });
+};
+
