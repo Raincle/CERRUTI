@@ -11,13 +11,21 @@ $(function() {
         var className = '.contents-wrapper .' + state;
         $(className).css({display: 'block'});
 
-        //Dismiss video;
-        //$('.adverse #long-video').attr("src","");
-        //$('.about #long-video').attr("src","");
-        //$('.product #long-video').attr("src","");
-        //
-        //$('.play-btn').css({display:'block'});
-        //$('.video-bg').css({display:'block'});
+        //Init Content;
+        //Introduce;
+        $('.contents-wrapper .introduce .introduce-wrapper').css({left: 0});
+        //Product;
+        $('.contents-wrapper .product .product-wrapper').css({display:'block'});
+        $('.contents-wrapper .product .desc').css({display:'block'});
+        $('.contents-wrapper .product .preview-wrapper').css({display:'block'});
+        $('.contents-wrapper .product .arrow-left').css({display:'none'});
+        $('.contents-wrapper .product .arrow-right').css({display:'none'});
+        $('.contents-wrapper .product .img-gallery').css({display:'none'});
+        $('.contents-wrapper .product .img-selector').css({display:'none'});
+        //Interact;
+        $('.contents-wrapper .interaction .page').css({display:'none'});
+        $('.contents-wrapper .interaction .page-1').css({display:'block'});
+
     }
 
     $('.menu .menu-item').click(function() {
