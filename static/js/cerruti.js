@@ -126,8 +126,6 @@ $(function() {
     });
     //Img process;
 
-
-
     //Video;
     //$('.contents-wrapper .adverse .play-btn').click(function() {
     //    $(this).css({display:'none'});
