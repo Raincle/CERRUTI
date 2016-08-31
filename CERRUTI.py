@@ -8,7 +8,7 @@ class MainHandler(tornado.web.RequestHandler):
 
 class AppHandler(tornado.web.RequestHandler):
     def get(self):
-        self.redirect("http://curio.im/oapi/authorize?redirect_uri=[http://cerruti.ahashike.com/oauth]&client_id= [e8c4600a-0c80-4fdb-835b-f2800d44655d]&response_type=code")
+        self.redirect("http://curio.im/oapi/authorize?redirect_uri=[http://cerruti.ahashike.com/oauth]&client_id=[e8c4600a-0c80-4fdb-835b-f2800d44655d]&response_type=code")
 
 class OAuthHandler(tornado.web.RequestHandler):
     def get(self):
