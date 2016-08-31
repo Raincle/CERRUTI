@@ -54,6 +54,7 @@ function postData(apiSuffix,data,_success) {
         type: 'post',
         url: api(apiSuffix),
         data: data,
+        corssDomain: true,
         dataType: "json",
         success: function(response) {
             switch (response.code) {
