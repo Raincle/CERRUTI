@@ -73,10 +73,10 @@ $(function() {
 
     function changeProductState(state) {
         productState = productState + state;
-        if (productState < -8) {
+        if (productState < -31) {
             productState = 0;
         } else if (productState > 0) {
-            productState = -8;
+            productState = -31;
         }
         var pageLeft = $('.contents-wrapper .product').width() * productState;
         $('.contents-wrapper .product .img-gallery').animate({left: pageLeft}, 'normal');
@@ -97,6 +97,7 @@ $(function() {
 
     $('.img-selector .img-item').click(function() {
         var state = parseInt($(this).attr("stateValue"));
+        productState = -state;
         changeProductStateBySelector(state);
     });
 
