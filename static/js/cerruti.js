@@ -233,13 +233,13 @@ $(function() {
             var check = /^1[3|4|5|7|8]\d{9}$/;
             isValidated = check.test(phonenum);
         } else if (district == "香港") {
-            var check = /^[0-9]{8}$/;
+            var check = /^[5|6|9|8]\d{7}$/;
             isValidated = check.test(phonenum);
         } else if (district == "澳门") {
             var check = /^[0-9]{10}$/;
             isValidated = check.test(phonenum);
         } else if (district == "台湾") {
-            var check = /^[0-9]{8}$/;
+            var check = /^09\d{6}$/;
             isValidated = check.test(phonenum);
         } else if (district == "其他") {
             if (phonenum !== "") {
