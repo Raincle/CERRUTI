@@ -12,12 +12,12 @@ $(function() {
         $(className).css({display: 'block'});
 
         //Dismiss video;
-        $('.adverse #long-video').attr("src","");
-        $('.about #long-video').attr("src","");
-        $('.product #long-video').attr("src","");
-
-        $('.play-btn').css({display:'block'});
-        $('.video-bg').css({display:'block'});
+        //$('.adverse #long-video').attr("src","");
+        //$('.about #long-video').attr("src","");
+        //$('.product #long-video').attr("src","");
+        //
+        //$('.play-btn').css({display:'block'});
+        //$('.video-bg').css({display:'block'});
     }
 
     $('.menu .menu-item').click(function() {
@@ -129,23 +129,23 @@ $(function() {
 
 
     //Video;
-    $('.contents-wrapper .adverse .play-btn').click(function() {
-        $(this).css({display:'none'});
-        $('.contents-wrapper .adverse .adverse-wrapper .video-bg').css({display:'none'});
-        $('.adverse #long-video').attr("src","http://v.qq.com/x/page/s0325ck991m.html");
-    });
-
-    $('.contents-wrapper .about .play-btn').click(function() {
-        $(this).css({display:'none'});
-        $('.contents-wrapper .about .about-wrapper .video-bg').css({display:'none'});
-        $('.about #long-video').attr("src","http://v.qq.com/x/page/u0325eehql1.html");
-    });
-
-    $('.contents-wrapper .product .play-btn').click(function() {
-        $(this).css({display:'none'});
-        $('.contents-wrapper .product .product-wrapper .video-bg').css({display:'none'});
-        $('.product #long-video').attr("src","http://v.qq.com/x/page/e0325ohjpbw.html");
-    });
+    //$('.contents-wrapper .adverse .play-btn').click(function() {
+    //    $(this).css({display:'none'});
+    //    $('.contents-wrapper .adverse .adverse-wrapper .video-bg').css({display:'none'});
+    //    $('.adverse #long-video').attr("src","http://v.qq.com/x/page/s0325ck991m.html");
+    //});
+    //
+    //$('.contents-wrapper .about .play-btn').click(function() {
+    //    $(this).css({display:'none'});
+    //    $('.contents-wrapper .about .about-wrapper .video-bg').css({display:'none'});
+    //    $('.about #long-video').attr("src","http://v.qq.com/x/page/u0325eehql1.html");
+    //});
+    //
+    //$('.contents-wrapper .product .play-btn').click(function() {
+    //    $(this).css({display:'none'});
+    //    $('.contents-wrapper .product .product-wrapper .video-bg').css({display:'none'});
+    //    $('.product #long-video').attr("src","http://v.qq.com/x/page/e0325ohjpbw.html");
+    //});
 
 
     $('.preview-wrapper img').click(function() {
