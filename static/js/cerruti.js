@@ -228,15 +228,15 @@ $(function() {
         }
     }
 
-    function birthdayValidation(birthday) {
-        if (birthday == "") {
-            $('.inputs-wrapper .birthday .error-tip').css({display:'block'});
-            return false;
-        } else {
-            $('.inputs-wrapper .birthday .error-tip').css({display:'none'});
-            return true;
-        }
-    }
+    //function birthdayValidation(birthday) {
+    //    if (birthday == "") {
+    //        $('.inputs-wrapper .birthday .error-tip').css({display:'block'});
+    //        return false;
+    //    } else {
+    //        $('.inputs-wrapper .birthday .error-tip').css({display:'none'});
+    //        return true;
+    //    }
+    //}
 
     function districtValidation(district) {
         if (district == "请点击选择地区") {
@@ -257,7 +257,7 @@ $(function() {
             var check = /^[5|6|9|8]\d{7}$/;
             isValidated = check.test(phonenum);
         } else if (district == "澳门") {
-            var check = /^[0-9]{8}$/;
+            var check = /^6[0-9]{7}$/;
             isValidated = check.test(phonenum);
         } else if (district == "台湾") {
             var check = /^09\d{8}$/;
@@ -288,7 +288,7 @@ $(function() {
         var phonenum = $('.inputs-wrapper .phonenum input').val();
 
 
-        if (nameValidation(name) && birthdayValidation(birthday) && districtValidation(district) && phonenumValidation(district,phonenum)) {
+        if (nameValidation(name) && districtValidation(district) && phonenumValidation(district,phonenum)) {
             if (choice == 'B') {
                 $('.contents-wrapper .interaction .page').css({display:'none'});
                 $('.contents-wrapper .interaction .page-4').css({display:'block'});
