@@ -31,11 +31,23 @@ $(function() {
 
     $('.menu .menu-item').click(function() {
         contentState = $(this).attr("contentState");
+        $('.tabs-wrapper .tab-item .selected').css({display:'none'});
+        var className1 = '.tabs-wrapper .' + contentState + ' .selected';
+        var className2 = '.tabs-wrapper .' + contentState + ' img';
+        $(className2).css({display:'none'});
+        $(className1).css({display:'block'});
+
         changeContentState(contentState);
     });
 
     $('.tabs-wrapper .tab-item').click(function() {
         contentState = $(this).attr("contentState");
+
+        $('.tabs-wrapper .tab-item img').css({display:'block'});
+        $('.tabs-wrapper .tab-item .selected').css({display:'none'});
+        $(this).find('img').css({display:'none'});
+        $(this).find('.selected').css({display:'block'});
+
         changeContentState(contentState);
     });
 
