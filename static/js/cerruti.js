@@ -1,7 +1,5 @@
 $(function() {
-
-    window.location.href = "http://curio.im/oapi/authorize?redirect_uri=[http://cerruti.ahashike.com/oauth]&client_id= [e8c4600a-0c80-4fdb-835b-f2800d44655d]&response_type=code";
-
+    
     var windowWidth = $(window).width();
     var windowHeight = $(window).height();
 
