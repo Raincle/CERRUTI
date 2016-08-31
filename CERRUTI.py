@@ -10,6 +10,9 @@ class AppHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("app.html")
 
+    def post(self):
+        self.render("app.html")
+
 class OAuthHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("oauth.html")
