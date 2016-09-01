@@ -119,6 +119,9 @@ $(function() {
                 case 3:
                     $('.cerruti .poster').remove();
                     $('.cerruti .menu').remove();
+                    $('body').on('touchmove', function (event) {
+                        event.preventDefault();
+                    },true);
                     break;
                 default:
                     break;
@@ -135,9 +138,9 @@ $(function() {
         top:(windowHeight-$('.onepage-pagination').height())/2
     });
 
-    //$('body').on('touchmove', function (event) {
-    //    event.preventDefault();
-    //},false);
+    $('body').on('touchmove', function (event) {
+        event.preventDefault();
+    },false);
 
 
     $('.poster .down-arrow').click(function() {
