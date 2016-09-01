@@ -19,6 +19,7 @@ class GetAccessTokenHandler(tornado.web.RequestHandler):
     def getAccessToken(self):
         access_token = self.settings["db"].access_token
         result = yield access_token.find_one({"status": "200"})
+        print(result)
         result["_id"] = str(result["_id"])
         print(result)
         raise Return(result)
