@@ -95,11 +95,6 @@ $(function() {
         $('.contents-wrapper .product .img-gallery').animate({left: pageLeft * -1}, 'normal');
     }
 
-    $('.img-selector .img-item').click(function() {
-        var state = parseInt($(this).attr("stateValue"));
-        productState = -state;
-        changeProductStateBySelector(state);
-    });
 
         //Scroll;
     $(".cerruti").onepage_scroll({
@@ -148,6 +143,12 @@ $(function() {
                     $('.img-selector-wrapper').html(imgSelectorInner).promise().done(function() {
                         $('.img-selector .img-item').css({width: windowWidth / 9});
                         $('.img-selector-wrapper').css({width: windowWidth / 9 * 32});
+
+                        $('.img-selector .img-item').click(function() {
+                            var state = parseInt($(this).attr("stateValue"));
+                            productState = -state;
+                            changeProductStateBySelector(state);
+                        });
                     });
                     break;
                 default:
