@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="688d0358-9bbd-4c01-9924-0252ab06b02a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CERRUTI.py" afterPath="$PROJECT_DIR$/CERRUTI.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/cerruti.js" afterPath="$PROJECT_DIR$/static/js/cerruti.js" />
     </list>
     <ignored path="CERRUTI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,10 +65,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CERRUTI.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CERRUTI.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CERRUTI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6864989">
+            <state vertical-scroll-proportion="-11.111111">
               <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding>
                 <element signature="e#0#14#0" expanded="true" />
@@ -78,18 +77,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cerruti.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cerruti.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/cerruti.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="147" column="7" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
-              <folding>
-                <marker date="1472699989000" expanded="true" signature="13:12343" placeholder="{...}" />
-                <marker date="1472699989000" expanded="true" signature="11692:11698" placeholder="{...}" />
-                <marker date="1472699989000" expanded="true" signature="11787:11943" placeholder="{...}" />
-                <marker date="1472699989000" expanded="true" signature="12030:12186" placeholder="{...}" />
-                <marker date="1472699989000" expanded="true" signature="12274:12338" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.61647725">
+              <caret line="266" column="38" selection-start-line="266" selection-start-column="38" selection-end-line="266" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -114,9 +107,9 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/static/js/common.js" />
-        <option value="$PROJECT_DIR$/static/js/cerruti.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/CERRUTI.py" />
+        <option value="$PROJECT_DIR$/static/js/cerruti.js" />
       </list>
     </option>
   </component>
@@ -454,7 +447,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28836834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -463,7 +456,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32786885" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -535,13 +528,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="98" column="24" selection-start-line="98" selection-start-column="24" selection-end-line="98" selection-end-column="24" />
-          <folding>
-            <marker date="1472699989000" expanded="true" signature="13:12343" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="11692:11698" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="11787:11943" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="12030:12186" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="12274:12338" placeholder="{...}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -614,20 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/cerruti.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="147" column="7" selection-start-line="147" selection-start-column="7" selection-end-line="147" selection-end-column="7" />
-          <folding>
-            <marker date="1472699989000" expanded="true" signature="13:12343" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="11692:11698" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="11787:11943" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="12030:12186" placeholder="{...}" />
-            <marker date="1472699989000" expanded="true" signature="12274:12338" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.75">
@@ -669,11 +642,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CERRUTI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6864989">
+        <state vertical-scroll-proportion="-11.111111">
           <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding>
             <element signature="e#0#14#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/cerruti.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61647725">
+          <caret line="266" column="38" selection-start-line="266" selection-start-column="38" selection-end-line="266" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
