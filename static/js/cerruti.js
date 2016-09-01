@@ -122,6 +122,33 @@ $(function() {
                     //$('body').on('touchmove', function (event) {
                     //    event.preventDefault();
                     //},true);
+                    var imgGalleryInner = "";
+                    for (var i=1;i< 32;i++) {
+                        var img = "<img class='img-item' src='http://ocq36fh4i.bkt.clouddn.com/m" +
+                            (i+1) +
+                            ".jpg' alt=''>";
+                        imgGalleryInner += img;
+                    }
+                    imgGalleryInner += "<div class='clear'></div>";
+                    $('.img-gallery').html(imgGalleryInner).promise().done(function() {
+                        $('.img-gallery .img-item').css({width: windowWidth * 0.8, marginLeft: windowWidth * 0.2 });
+                        $('.img-gallery .img-item').first().css({marginLeft: windowWidth * 0.1 });
+                    });
+
+                    var imgSelectorInner = "";
+                    for (var i=1;i< 32;i++) {
+                        var img = "<img class='img-item' src='http://ocq36fh4i.bkt.clouddn.com/m" +
+                            (i+1) +
+                            ".jpg' alt='' stateValue='" +
+                            i +
+                            "'>";
+                        imgSelectorInner += img;
+                    }
+                    imgSelectorInner += "<div class='clear'></div>";
+                    $('.img-selector-wrapper').html(imgSelectorInner).promise().done(function() {
+                        $('.img-selector .img-item').css({width: windowWidth / 9});
+                        $('.img-selector-wrapper').css({width: windowWidth / 9 * 32});
+                    });
                     break;
                 default:
                     break;
@@ -181,10 +208,7 @@ $(function() {
         $('.contents-wrapper .product .img-selector').css({display:'block'});
     });
 
-    $('.img-gallery .img-item').css({width: windowWidth * 0.8, marginLeft: windowWidth * 0.2 });
-    $('.img-gallery .img-item').first().css({marginLeft: windowWidth * 0.1 });
-    $('.img-selector .img-item').css({width: windowWidth / 9});
-    $('.img-selector-wrapper').css({width: windowWidth / 9 * 32});
+
 
 
     $('.contents-wrapper .interaction .enter-btn').click(function() {
