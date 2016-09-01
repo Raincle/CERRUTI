@@ -62,10 +62,10 @@ function postData(apiSuffix,data,_success) {
                     _success(response);
                     break;
                 case -1:
-                    alert(JSON.stringify(response.msg));
+                    //alert(JSON.stringify(response.msg));
                     break;
                 default:
-                    alert(apiSuffix+JSON.stringify(response.msg));
+                    //alert(apiSuffix+JSON.stringify(response.msg));
                     break;
             };
         }
