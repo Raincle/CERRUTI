@@ -117,11 +117,13 @@ $(function() {
                 case 2:
                     break;
                 case 3:
+                    $('body').on('touchmove', function (event) {
+                        event.preventDefault();
+                    },true);
+
                     $('.cerruti .poster').remove();
                     $('.cerruti .menu').remove();
-                    //$('body').on('touchmove', function (event) {
-                    //    event.preventDefault();
-                    //},true);
+
                     var imgGalleryInner = "";
                     for (var i=1;i< 32;i++) {
                         var img = "<img class='img-item' src='http://ocq36fh4i.bkt.clouddn.com/m" +
@@ -165,9 +167,9 @@ $(function() {
         top:(windowHeight-$('.onepage-pagination').height())/2
     });
 
-    //$('body').on('touchmove', function (event) {
-    //    event.preventDefault();
-    //},false);
+    $('body').on('touchmove', function (event) {
+        event.preventDefault();
+    },false);
 
 
     $('.poster .down-arrow').click(function() {
