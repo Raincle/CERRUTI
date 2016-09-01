@@ -335,6 +335,7 @@ $(function() {
                 district: district,
                 phonenum: phonenum,
                 token: "xiaohong",
+                openid: window.QueryString.openid,
             }
             postData('',dataToPost,postSuccess)
 
