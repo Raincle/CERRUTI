@@ -32,6 +32,7 @@ $(function() {
     $('.menu .menu-item').click(function() {
         contentState = $(this).attr("contentState");
         $('.tabs-wrapper .tab-item .selected').css({display:'none'});
+        $('.tabs-wrapper .tab-item img').css({display:'block'});
         var className1 = '.tabs-wrapper .' + contentState + ' .selected';
         var className2 = '.tabs-wrapper .' + contentState + ' img';
         $(className2).css({display:'none'});
