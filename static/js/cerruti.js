@@ -118,7 +118,7 @@ $(function() {
                     $('.cerruti .menu').remove();
 
                     var imgGalleryInner = "";
-                    for (var i=1;i< 32;i++) {
+                    for (var i=0;i< 32;i++) {
                         var img = "<img class='img-item' src='http://ocq36fh4i.bkt.clouddn.com/m" +
                             (i+1) +
                             ".jpg' alt=''>";
@@ -131,7 +131,7 @@ $(function() {
                     });
 
                     var imgSelectorInner = "";
-                    for (var i=1;i< 32;i++) {
+                    for (var i=0;i< 32;i++) {
                         var img = "<img class='img-item' src='http://ocq36fh4i.bkt.clouddn.com/m" +
                             (i+1) +
                             ".jpg' alt='' stateValue='" +
