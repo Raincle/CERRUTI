@@ -265,7 +265,7 @@ $(function() {
             var check = /^09\d{8}$/;
             isValidated = check.test(phonenum);
         } else if (district == "其他") {
-            var check = /^[0-9]$/;
+            var check = /^[0-9]*$/;
             isValidated = check.test(phonenum);
         } else {
             isValidated = false;
