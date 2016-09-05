@@ -72,3 +72,26 @@ function postData(apiSuffix,data,_success) {
     });
 };
 
+
+function getData(apiSuffix,data,_success) {
+    $.ajax({
+        type: 'get',
+        url: api(apiSuffix),
+        data: data,
+        corssDomain: true,
+        dataType: "json",
+        success: function(response) {
+            switch (response.code) {
+                case 1 :
+                    _success(response);
+                    break;
+                case -1:
+                    //alert(JSON.stringify(response.msg));
+                    break;
+                default:
+                    //alert(apiSuffix+JSON.stringify(response.msg));
+                    break;
+            };
+        }
+    });
+};

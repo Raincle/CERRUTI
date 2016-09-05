@@ -29,6 +29,10 @@ class MainHandler(tornado.web.RequestHandler):
     def get(self):
         self.render("index.html")
 
+class UserInfoHandler(tornado.web.RequestHandler):
+    def get(self):
+        self.render("userinfo.html")
+
 
 class AppHandler(tornado.web.RequestHandler):
     def get(self):
@@ -66,6 +70,7 @@ application = tornado.web.Application(
         (r"/", MainHandler),
         (r"/app", AppHandler),
         (r"/oauth", OAuthHandler),
+        (r"/userinfo", UserInfoHandler),
         (r"/getAccessToken", GetAccessTokenHandler),
     ],
     static_path=os.path.join(os.path.dirname(__file__), "static"),

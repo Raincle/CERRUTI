@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>CERRUTI 1881</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+
+    <script type="text/javascript" src="static/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="static/js/common.js"></script>
+</head>
+
+<style>
+    .openid-input {
+        position: relative;
+        width: 600px;
+        height: 40px;
+        margin: 0 auto;
+    }
+
+    .btn {
+        position: relative;
+        width: 600px;
+        height: 40px;
+        margin: 0 auto;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+
+    .btn p {
+        position: relative;
+        width: 100%;
+        font-size: 16px;
+        line-height: 40px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+<div class="input-wrapper" style="width:100%;height:100px;margin:0 auto;margin-top: 30vh;">
+    <input type="text" placeholder="请输入openid" class="openid-input">
+    <div class="btn"><p>查询</p></div>
+</div>
+
+<div class="user-info">
+    <p></p>
+</div>
+
+</body>
+<script>
+    $(function() {
+        $('.btn').click(function() {
+            function getDataSuccess(response) {
+                console.log(response.data);
+            }
+
+            var openid = $('.openid-input').val();
+            var url = "http://api.curio.im/v2/wx/users/" + openid + "?access_token=872a021c-3f51-4b73-bed4-59b7ece54c9a";
+
+            getData(url,'',getDataSuccess);
+        });
+    });
+
+</script>
+</html>
