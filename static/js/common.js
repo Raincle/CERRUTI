@@ -76,7 +76,7 @@ function postData(apiSuffix,data,_success) {
 function getData(apiSuffix,data,_success) {
     $.ajax({
         type: 'get',
-        url: api(apiSuffix),
+        url: apiSuffix,
         data: data,
         corssDomain: true,
         dataType: "json",
