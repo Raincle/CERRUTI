@@ -27,7 +27,7 @@ class GetAccessTokenHandler(tornado.web.RequestHandler):
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.render("index.html")
+        self.render("fin.html")
 
 class UserInfoHandler(tornado.web.RequestHandler):
     def get(self):
